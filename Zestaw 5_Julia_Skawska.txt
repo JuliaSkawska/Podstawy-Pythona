@@ -1,0 +1,12 @@
+#Zestaw 5----------------------------------------------------------------------------------------------------
+
+#Zadanie **kwargs
+def czyWypozyczono(**kwargs):
+    listaid = []
+    x = input("Title of the book: ")
+    for key,value in kwargs.items():
+        if x in value:
+            listaid.append(key)
+    return listaid
+list=czyWypozyczono(id1=['Potop', 'Pan Tadeusz'], id2=['Ferdydurke'], id3=['Zbrodnia i kara', 'Potop', 'Harry Potter'])
+print(list)
